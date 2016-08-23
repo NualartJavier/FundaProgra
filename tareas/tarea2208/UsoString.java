@@ -76,7 +76,8 @@ public class UsoString {
             if (voc.contains(letra + "")) {
 
             } else {
-                cantCon++;
+                if(Character.isLetter(letra)){
+                    cantCon++;}
             }
         }
         return cantCon;
